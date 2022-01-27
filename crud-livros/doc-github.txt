@@ -1,0 +1,25 @@
+
+#Alterar repositório remoto
+$ git remote set-url origin xxxx
+
+#Adicionar novo repositório remoto
+$ git remote add origin xxxx
+
+#Consultar repositório
+$ git remote -v
+
+#Conultar alteração de arquivos
+$ git status
+
+#Criar commit (comentário)
+$ git commit
+
+#Add arquivos
+$ git add .  (add todos os arquivos alterados)
+$ git add nome-do-arquivo   (add apenas um arquivo)
+
+#Enviar arquivos para gitHub
+$ git push
+
+#Trazer arquivos do gitHub
+$ git pull
