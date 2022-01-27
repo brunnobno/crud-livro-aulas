@@ -11,12 +11,12 @@ $ git remote -v
 #Conultar alteração de arquivos
 $ git status
 
-#Criar commit (comentário)
-$ git commit
-
 #Add arquivos
 $ git add .  (add todos os arquivos alterados)
 $ git add nome-do-arquivo   (add apenas um arquivo)
+
+#Criar commit (comentário)
+$ git commitgit
 
 #Enviar arquivos para gitHub
 $ git push
