@@ -16,7 +16,7 @@ include('header.php');
                         <h5 class="text-primary">Título do livro</h5>
                     </div>
                     <div class="col-12 col-md-10">
-                        <p> <strong>Descrição:</strong> <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint, nostrum harum debitis incidunt optio culpa odit, praesentium quia ipsa a temporibus. Quis in repellendus, eaque aspernatur ipsa debitis sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint, nostrum harum debitis incidunt optio culpa odit, praesentium quia ipsa a temporibus. Quis in repellendus, eaque aspernatur ipsa debitis sit?</span></p>
+                        <p> <strong>Descrição:</strong> <span class="">Lorem ipsum++ dolor sit amet consectetur adipisicing elit. Eaque sint, nostrum harum debitis incidunt optio culpa odit, praesentium quia ipsa a temporibus. Quis in repellendus, eaque aspernatur ipsa debitis sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint, nostrum harum debitis incidunt optio culpa odit, praesentium quia ipsa a temporibus. Quis in repellendus, eaque aspernatur ipsa debitis sit?</span></p>
                     </div>
                                     
                     <div class="col-12 col-md-10">
