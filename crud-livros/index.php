@@ -13,11 +13,12 @@ include('header.php');
                 <thead>
                     <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Título</th>
+                    <th scope="col">Título do Livro</th>
                     <th scope="col">Autor</th>
-                    <th scope="col">Ano de publicação</th>
+                    <th scope="col">Ano</th>
                     <th scope="col">Estado</th>
                     <th scope="col">Capa</th>
+                    <th scope="col">Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,141 +30,59 @@ include('header.php');
                     <td>Conservado</td>
                     <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50">
                     </td>
-                    <td><a href="cadastro-livro.php"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <a href="#excluir"><button type="button" class="btn btn-danger btn-sm">Excluir</button></a></td>    
+                    <td><a href="cadastro-livro.php"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <a href="#excluir"><button type="button" class="btn btn-danger btn-sm">Excluir</button></a> <a href="arquivo-livro.php"><button type="button" class="btn btn-success btn-sm">Detalhes</button></a></td>    
                     </tr>
                     <tr>
-                    <th scope="row">2</th>
+                    <th scope="row d-flex align-items-center">1</th>
                     <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
                     <td>Brunno Hernandez</td>
                     <td>2002</td>
                     <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
+                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50">
+                    </td>
+                    <td><a href="cadastro-livro.php"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <a href="#excluir"><button type="button" class="btn btn-danger btn-sm">Excluir</button></a> <a href="arquivo-livro.php"><button type="button" class="btn btn-success btn-sm">Detalhes</button></a></td>    
                     </tr>
                     <tr>
-                    <th scope="row">3</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
+                    <th scope="row d-flex align-items-center">2</th>
+                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 02</a></td>
                     <td>Brunno Hernandez</td>
                     <td>2002</td>
                     <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
+                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50">
+                    </td>
+                    <td><a href="cadastro-livro.php"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <a href="#excluir"><button type="button" class="btn btn-danger btn-sm">Excluir</button></a> <a href="arquivo-livro.php"><button type="button" class="btn btn-success btn-sm">Detalhes</button></a></td>    
                     </tr>
                     <tr>
-                    <th scope="row">4</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
+                    <th scope="row d-flex align-items-center">3</th>
+                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 03</a></td>
                     <td>Brunno Hernandez</td>
                     <td>2002</td>
                     <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
+                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50">
+                    </td>
+                    <td><a href="cadastro-livro.php"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <a href="#excluir"><button type="button" class="btn btn-danger btn-sm">Excluir</button></a> <a href="arquivo-livro.php"><button type="button" class="btn btn-success btn-sm">Detalhes</button></a></td>    
                     </tr>
                     <tr>
-                    <th scope="row">5</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
+                    <th scope="row d-flex align-items-center">4</th>
+                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 04</a></td>
                     <td>Brunno Hernandez</td>
                     <td>2002</td>
                     <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
+                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50">
+                    </td>
+                    <td><a href="cadastro-livro.php"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <a href="#excluir"><button type="button" class="btn btn-danger btn-sm">Excluir</button></a> <a href="arquivo-livro.php"><button type="button" class="btn btn-success btn-sm">Detalhes</button></a></td>    
                     </tr>
                     <tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
+                    <th scope="row d-flex align-items-center">5</th>
+                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 05</a></td>
                     <td>Brunno Hernandez</td>
                     <td>2002</td>
                     <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
+                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50">
+                    </td>
+                    <td><a href="cadastro-livro.php"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <a href="#excluir"><button type="button" class="btn btn-danger btn-sm">Excluir</button></a> <a href="arquivo-livro.php"><button type="button" class="btn btn-success btn-sm">Detalhes</button></a></td>    
                     </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
-                    <th scope="row">6</th>
-                    <td><a class="navbar-brand" href="arquivo-livro.php">Livro 01</a></td>
-                    <td>Brunno Hernandez</td>
-                    <td>2002</td>
-                    <td>Conservado</td>
-                    <td><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="50" height="50"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm">Editar</button> <button type="button" class="btn btn-danger btn-sm">Excluir</button></td>    
-                    </tr>
+                    
 
                 </tbody>
                 </table>

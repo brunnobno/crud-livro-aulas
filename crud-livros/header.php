@@ -48,8 +48,8 @@
                     </div>
 
                     <div class="col-md-6">   
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Pesquisar Livro" aria-label="Procurar">
+                        <form action="request.php" method="GET" class="d-flex">
+                            <input class="form-control me-2" name="search" type="text" placeholder="Pesquisar Livro" aria-label="Procurar" required>
                             <button class="btn btn-secondary" type="submit">Procurar</button>
                         </form>
                     </div>
