@@ -11,7 +11,7 @@ include('header.php');
                 <hr>
             <div class="row">
                 <div class="col-12 col-md-4">
-                  <div class="alert alert-primary" role="alert">
+                  <div class="alert alert-warning" role="alert">
 
                         <!--- Verificação de método --->
                         <?php
