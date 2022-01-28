@@ -2,9 +2,9 @@
 include('header.php');
 ?>
 
-<div class="container-fluid">
+<div class="container-fluid bg-light">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-10 bg-light">
+        <div class="col-12 col-md-10 bg-white">
                 <br>
                 <h3 class="mt-5"><i class="fas fa-pencil-alt"></i> Cadastrar/editar livro</h3>
                 <p class="lead"> Cadastre um novo livro ou edite um já existente.</p>
@@ -31,7 +31,7 @@ include('header.php');
                             <div class="col-md-10">
                                 <label for="titulo"><strong>Item de coleção:</strong></label> 
                             </div>                  
-                            <div class="col-md-10"><input type="radio" class="form-check-input" id="colecao" name="colecao" value="SIM">
+                            <div class="col-md-10"><input type="radio" class="form-check-input" id="colecao" name="colecao" value="SIM" required>
                                 <label class="form-check-label" for="autor">Sim</label>
                             </div>
                             <div class="col-md-10"><input type="radio" class="form-check-input" id="colecao" name="colecao" value="NÃO">

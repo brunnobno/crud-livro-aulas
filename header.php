@@ -29,32 +29,36 @@
 
 <header class=" container-fluid fixed-top">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-10 bg-dark">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="index.php">CRUD Livros</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="col-md-6">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.php">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cadastro-livro.php">Cadastrar</a>
-                            </li>
-                        </ul>      
-                    </div>
+        <div class="col-12 col-md-12 bg-dark">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand" href="index.php">CRUD Livros</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="col-md-6">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.php">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="cadastro-livro.php">Cadastrar</a>
+                                    </li>
+                                </ul>      
+                            </div>
 
-                    <div class="col-md-6">   
-                        <form action="request.php" method="GET" class="d-flex">
-                            <input class="form-control me-2" name="search" type="text" placeholder="Pesquisar Livro" aria-label="Procurar" required>
-                            <button class="btn btn-secondary" type="submit">Procurar</button>
-                        </form>
-                    </div>
+                            <div class="col-md-6">   
+                                <form action="request.php" method="GET" class="d-flex">
+                                    <input class="form-control me-2" name="search" type="text" placeholder="Pesquisar Livro" aria-label="Procurar" required>
+                                    <button class="btn btn-secondary" type="submit">Procurar</button>
+                                </form>
+                            </div>   
+                        </div>
+                    </nav>
                 </div>     
-            </nav>
+            </div>        
         </div>
     </div>
 </header>
