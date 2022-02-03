@@ -9,8 +9,21 @@
                 </div>
             </div>
         </div>
-    </div>     
+    </div>
 </footer>
 
+<script>
+    document.querySelectorAll('[data-type="excluir"]').forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault();
+            if(!event.target.dataset.itemId)
+            {
+                return;
+            }
+
+            excluirLivro(event.target.dataset.itemId)
+        })
+    })
+</script>
 </body>
 </html>

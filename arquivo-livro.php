@@ -13,20 +13,20 @@ if(isset($_GET['id'])) {
                 <h3 class="mt-5"><i class="fas fa-search-plus"></i> Informações sobre o Livro</h3>
                 <p class="lead"> Veja informações sobre o livro escolhido.</p>
                 <hr>
-          
+
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <div class="col-12 col-md-10">                
+                    <div class="col-12 col-md-10">
                         <h2 class="text-primary"><?= $_SESSION['cadastro'][$id]['titulo']; ?></h5>
                     </div>
                     <div class="col-12 col-md-10">
                         <p> <strong>Descrição:</strong> <span class=""><?= $_SESSION['cadastro'][$id]['descricao']; ?></span></p>
                     </div>
-                                    
+
                     <div class="col-12 col-md-10">
                         <p> <strong>Autor:</strong> <span class=""><?= $_SESSION['cadastro'][$id]['autor']; ?></span></p>
                     </div>
-                    
+
                     <div class="col-12 col-md-10">
                         <p> <strong>Ano da publicação:</strong> <span class=""><?= $_SESSION['cadastro'][$id]['ano']; ?></span></p>
                     </div>
@@ -37,19 +37,25 @@ if(isset($_GET['id'])) {
 
                 </div>
                 <div class="col-12 col-md-4">
-                    <p><img src="<?= $_SESSION['cadastro'][$id]['upload']; ?>" width="" height="300px"></p>   
-                </div> 
-                
-                <div class="row">                  
+                    <p><img src="<?= $_SESSION['cadastro'][$id]['upload']; ?>" width="" height="300px"></p>
+                </div>
+
+                <div class="row">
                     <div class="col-12 col-md-10 mt-3 mb-3">
-                    
-                        <?php
-                            if(!empty($_SESSION['editar-info-session'])) {
-                        ?>
-                            <a href="cadastro-livro.php?title=<?= $_GET['id']; ?>"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <form method="GET"><a href="index.php?excluir=<?= $_SESSION['cadastro'][$id]; ?>"><button type="button" class="btn btn-danger btn-sm" name="excluir">Excluir</button></form>
-                        <?php
-                            } 
-                        ?>
+
+                        <?php if(!empty($_SESSION['editar-info-session'])): ?>
+                            <a href="index.php?excluir=<?= $id; ?>" class="btn btn-outline-danger btn-sm" onclick="excluirLivro(<?= $id; ?>);return false;">
+                                Excluir
+                            </a>
+
+                            <button class="btn btn-outline-danger btn-sm" data-type="excluir" data-item-id="<?= $id; ?>">
+                                Excluir event
+                            </button>
+
+                            <a href="cadastro-livro.php?title=<?= $_GET['id']; ?>" class="btn btn-primary btn-sm">
+                                Editar
+                            </a>
+                        <?php endif; ?>
 
                     </div>
                 </div>
