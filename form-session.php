@@ -1,13 +1,13 @@
 <?php
-require_once __DIR__."/header.php";
+require_once __DIR__./'header.php';
 
-if(isset($_POST['editar-info'])) {
-    $_SESSION['editar-info-session'] = "Autorizado";
-}
+// if(isset($_POST['editar-info'])) {
+//     $_SESSION['editar-info-session'] = "Autorizado";
+// }
 
-if(isset($_POST['remover-session'])) {
-    unset($_SESSION['editar-info-session']);
-}
+// if(isset($_POST['remover-session'])) {
+//     unset($_SESSION['editar-info-session']);
+// }
 
 if(isset($_GET['excluir'])) {
     $excluir = $_GET['excluir'];
@@ -29,11 +29,11 @@ if(isset($_GET['excluir'])) {
                 <div class="col-12 col-md-4">
                     <br>
                     <?php
-                    if(!empty($_SESSION['editar-info-session'])) {
-                        echo '<form action="index.php" method="POST"><button type="submit" class="btn btn-info" name="remover-session">Quero apenas visualizar</button></form>';
-                    } else {
-                        echo '<form action="index.php" method="POST"><button type="submit" class="btn btn-info" name="editar-info">Eu quero editar as informações</button></form>';
-                    }
+                    // if(!empty($_SESSION['editar-info-session'])) {
+                    //     echo '<form action="form-session.php" method="POST"><button type="submit" class="btn btn-info" name="remover-session">Quero apenas visualizar</button></form>';
+                    // } else {
+                    //     echo '<form action="form-session.php" method="POST"><button type="submit" class="btn btn-info" name="editar-info">Eu quero editar as informações</button></form>';
+                    // }
                     ?>
 
                 </div>
@@ -99,37 +99,28 @@ if(isset($_GET['excluir'])) {
                                         'upload'     =>  $_POST['upload'],
                                     ];                              
                                 }                                   
+                                        foreach($_SESSION['cadastro'] as $key => $value) {
                                         
-                                if(isset($_SESSION['cadastro'])) {
-                                    foreach($_SESSION['cadastro'] as $key => $value) {
-                                                    
+                                        
                             ?>                           
 
                             <tr>
                             <th scope="row"><?= $key; ?></th>
-                            <td><a class="navbar-brand" href="arquivo-livro.php?id=<?= $key; ?>"><?= $value['titulo']; ?></a></td>
+                            <td><a class="navbar-brand" href="arquivo-livro.php?title=<?= $value['titulo']; ?>"><?= $value['titulo']; ?></a></td>
                             <td><?= $value['autor']; ?></td>
                             <td><?= $value['ano']; ?></td>
                             <td><?= $value['colecao']; ?></td>
                             <td><img src="<?= $upload = (isset($value['upload']) && !empty($value['upload'])) ? $value['upload'] : "capa-livro.png" ; ?>" width="50" height="50">
                             </td>
                             <td>
-
-                            <?php
-                            if(!empty($_SESSION['editar-info-session'])){
-                            ?>
-
-                                <a href="cadastro-livro.php?title=<?= $value['titulo']; ?>"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <form action="index.php" method="GET"><a href="index.php?excluir=<?= $key; ?>"><button type="button" class="btn btn-danger btn-sm" name="excluir">Excluir</button></a></form>
                             
-                            <?php
-                            }
-                            ?>
-                                <a href="arquivo-livro.php?id=<?= $key; ?>"><button type="button" class="btn btn-success btn-sm">Detalhes</button></a></td>    
+                                <a href="cadastro-livro.php?title=<?= $value['titulo']; ?>"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <form action="index.php" method="GET"><a href="form-session.php?excluir=<?= $key; ?>"><button type="button" class="btn btn-danger btn-sm" name="excluir">Excluir</button></a></form>
+                          
+                                <a href="arquivo-livro.php?title=<?= $value['titulo']; ?>"><button type="button" class="btn btn-success btn-sm">Detalhes</button></a></td>    
                             </tr>
 
                             <?php                            
-                                }
-                                    }       
+                            }
                             ?>
 
                      </tbody>

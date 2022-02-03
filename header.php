@@ -27,6 +27,12 @@
 </head>
 <body>
 
+<?php
+
+session_start();
+
+?>
+
 <header class=" container-fluid fixed-top">
     <div class="row justify-content-center">
         <div class="col-12 col-md-12 bg-dark">

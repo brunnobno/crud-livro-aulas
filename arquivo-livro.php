@@ -1,7 +1,8 @@
 <?php
-include('header.php');
+require_once __DIR__."/header.php";
 
-if(isset($_GET['title'])) {
+if(isset($_GET['id'])) {
+    $id = $_GET['id'];
 
 ?>
 
@@ -16,32 +17,40 @@ if(isset($_GET['title'])) {
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="col-12 col-md-10">                
-                        <h2 class="text-primary"><?= $_GET['title']; ?></h5>
+                        <h2 class="text-primary"><?= $_SESSION['cadastro'][$id]['titulo']; ?></h5>
                     </div>
                     <div class="col-12 col-md-10">
-                        <p> <strong>Descrição:</strong> <span class="">Lorem ipsum++ dolor sit amet consectetur adipisicing elit. Eaque sint, nostrum harum debitis incidunt optio culpa odit, praesentium quia ipsa a temporibus. Quis in repellendus, eaque aspernatur ipsa debitis sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint, nostrum harum debitis incidunt optio culpa odit, praesentium quia ipsa a temporibus. Quis in repellendus, eaque aspernatur ipsa debitis sit?</span></p>
+                        <p> <strong>Descrição:</strong> <span class=""><?= $_SESSION['cadastro'][$id]['descricao']; ?></span></p>
                     </div>
                                     
                     <div class="col-12 col-md-10">
-                        <p> <strong>Autor:</strong> <span class="">Brunno Hernandez</span></p>
+                        <p> <strong>Autor:</strong> <span class=""><?= $_SESSION['cadastro'][$id]['autor']; ?></span></p>
                     </div>
                     
                     <div class="col-12 col-md-10">
-                        <p> <strong>Ano da publicação:</strong> <span class="">2002</span></p>
+                        <p> <strong>Ano da publicação:</strong> <span class=""><?= $_SESSION['cadastro'][$id]['ano']; ?></span></p>
                     </div>
 
                     <div class="col-12 col-md-10">
-                        <p> <strong>Item de coleção:</strong> <span class="">Não</span></p>
+                        <p> <strong>Item de coleção:</strong> <span class=""><?= $_SESSION['cadastro'][$id]['colecao']; ?></span></p>
                     </div>
 
                 </div>
                 <div class="col-12 col-md-4">
-                    <p><img src="https://www.sguerra.com.br/wp-content/uploads/2018/04/livro-antonio-chicola.png" width="" height="300px"></p>   
+                    <p><img src="<?= $_SESSION['cadastro'][$id]['upload']; ?>" width="" height="300px"></p>   
                 </div> 
                 
                 <div class="row">                  
                     <div class="col-12 col-md-10 mt-3 mb-3">
-                        <a href="cadastro-livro.php"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <a href="#excluir"><button type="button" class="btn btn-danger btn-sm">Excluir</button></a>
+                    
+                        <?php
+                            if(!empty($_SESSION['editar-info-session'])) {
+                        ?>
+                            <a href="cadastro-livro.php?title=<?= $_GET['id']; ?>"><button type="button" class="btn btn-primary btn-sm">Editar</button></a> <form method="GET"><a href="index.php?excluir=<?= $_SESSION['cadastro'][$id]; ?>"><button type="button" class="btn btn-danger btn-sm" name="excluir">Excluir</button></form>
+                        <?php
+                            } 
+                        ?>
+
                     </div>
                 </div>
 
